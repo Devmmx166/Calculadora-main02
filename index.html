@@ -1,0 +1,93 @@
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Calculadora</title>
+</head>
+
+<body style="height:640px;">
+
+  <!-- Cria um contêiner com a classe "conteudo, calculate e display". -->
+  <div class="conteudo" >
+    
+    <div class="calculator">
+    
+      <div class="history">
+        <h5>Histórico</h5><br> <!-- Título "History" e uma quebra de linha. -->
+  
+        <!-- Cria um contêiner flexível para organizar os cabeçalhos. -->
+        <div class="flex-container">
+          <h5>OPERAÇÃO</h5>
+          <h5>RESULTADO</h5>
+          <h5>DATA</h5>
+        </div>
+  
+        <!-- Cria um contêiner para listar o histórico com o ID "history-list". -->
+        <div class="historico" id="history-list"></div>
+        <div class="botoes">
+        <div class="center-button"> <!-- Cria um contêiner com a classe "center-button". -->
+          <button class="clear-button" id="clear-history-button" onclick="clearHistory()">
+            <!-- Cria um botão "Delete History" com a classe "clear-button" e uma função "clearHistory()" quando clicado. -->
+            Delete Histórico
+          </button>
+        </div>
+  
+        <!-- Cria um segundo contêiner com a classe "center-button". -->
+        <div class="center-button">
+          <button class="save-button" id="save-history-button" onclick="saveHistoryToFile()"> Save
+            Histórico</button><!-- Cria um botão "Save History" com a classe "save-button" e uma função "saveHistoryToFile()" quando clicado. -->
+        </div>
+  </div>
+      </div>
+  
+      <div class="display">
+        <input type="text" id="display" readonly>
+        <!-- Cria um campo de entrada de texto somente leitura com o ID "display". -->
+      </div>
+
+     
+
+      <div class="buttons"> <!-- Cria um contêiner com a classe "buttons" para os botões da calculadora. -->
+        <!-- Cria uma tabela para organizar os botões. -->
+
+        <button class="operator" id="clear" name="limpar" style="width: 106px;" onclick="clearDisplay()">CE</button>
+        <button class="operator" id="c-btn" onclick="backspace()">C</button>
+        <button class="operator" id="del-btn" onclick="backspace()">DEL</button>
+        <button class="operator" id="divisao" onclick="appendToDisplay('/')">/</button>
+
+
+        <button class="operator" onclick="appendToDisplay('7')">7</button>
+        <button class="operator" onclick="appendToDisplay('8')">8</button>
+        <button class="operator" onclick="appendToDisplay('9')">9</button>
+        <button class="operator" id="mult" onclick="appendToDisplay('*')">*</button>
+
+        <button class="operator" onclick="appendToDisplay('4')">4</button>
+        <button class="operator" onclick="appendToDisplay('5')">5</button>
+        <button class="operator" onclick="appendToDisplay('6')">6</button>
+        <button class="operator" id="menos" onclick="appendToDisplay('-')">-</button>
+
+        <button class="operator" onclick="appendToDisplay('1')">1</button>
+        <button class="operator" onclick="appendToDisplay('2')">2</button>
+        <button class="operator" onclick="appendToDisplay('3')">3</button>
+        <button class="operator" id="mais" onclick="appendToDisplay('+')">+</button>
+
+
+
+        <button class="operator" onclick="appendToDisplay('0')">0</button>
+        <button class="operator" onclick="appendToDisplay('.')">.</button>
+        <button class="operator" id="equals" style="width: 106px;" onclick="calculate()">=</button>
+
+       
+      </div>
+    </div>
+
+    <!-- Cria um contêiner com a classe "history" para o histórico de operações. -->
+   
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
