@@ -20,9 +20,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1em;
-  
-  
+  padding: 1em;  
 }
 h1{
   padding: 5px;
@@ -101,7 +99,7 @@ h3 {
 
 /* Estilos para o visor da calculadora */
 .display {
-  height: 100px;
+  height: 75px;
   color: #dfdfdf;
   text-align: center;
   font-size: 30px;
@@ -165,9 +163,9 @@ h3 {
   border: 1px solid white;
   max-height: 13.7rem;
   max-width: 92rem ;
-  height: 300.4em;
+  height: 290em;
   overflow-y: auto;
-  margin-top: 10px;
+  margin-top: px;
   
 }
 
@@ -175,7 +173,7 @@ h3 {
   display: flex; 
   justify-content: space-between;
   border-bottom: 2px solid #ccc;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   
 }
 
@@ -189,7 +187,7 @@ h3 {
 .clear-button,
 .save-button {
   padding: 0px 0px;
-  margin:3px;
+  margin:2px;
   /* Espaçamento interno do botão */
   font-size: 13px;
   /* Tamanho da fonte do texto no botão */
@@ -197,10 +195,10 @@ h3 {
   color: rgb(255, 251, 251);
   cursor: pointer;
  font-weight: bold;
-  border: 1px solid black;
+  border: 1px solid rgb(46, 45, 45);
   width: 110px;
-  height: 40px;
-  margin: 5px;
+  height: 35px;
+  margin: 2px;
 }
 
 .clear-button:hover,
@@ -215,14 +213,14 @@ h3 {
 }
 
 /* Estilos responsivos para telas menores */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
  
-}
+} */
 
 .buttons{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1px; 
+  gap:2px; 
   
 }
 
