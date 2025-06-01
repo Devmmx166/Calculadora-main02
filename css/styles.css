@@ -101,8 +101,8 @@ h3 {
 .display {
   height: 75px;
   color: #dfdfdf;
-  text-align: center;
-  font-size: 30px;
+  text-align: center; 
+  font-size: 50px bold;
   word-wrap: break-word;
   border-bottom: 1px solid #9fa1a1;
   width: 100%;
@@ -111,10 +111,11 @@ h3 {
 
 /* Estilos para o visor da calculadora com ID "display" */
 #display {
+  
   height: 70px;
   color: rgb(39, 39, 39);
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   word-wrap: break-word; 
   background: #d8d8d8;
   width: 100%;
